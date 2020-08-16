@@ -13,6 +13,8 @@
 		69AAF1DA24E77F7200FC265A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69AAF1D924E77F7200FC265A /* Assets.xcassets */; };
 		69AAF1DD24E77F7200FC265A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69AAF1DB24E77F7200FC265A /* LaunchScreen.storyboard */; };
 		69AAF1E024E77F7200FC265A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69AAF1DF24E77F7200FC265A /* main.m */; };
+		69AAF1E724E959B200FC265A /* HelloPodKIT.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 69AAF1E624E959B100FC265A /* HelloPodKIT.podspec */; };
+		69AAF1EB24E95B7600FC265A /* HelloModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 69AAF1EA24E95B7600FC265A /* HelloModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		69AAF1DC24E77F7200FC265A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69AAF1DE24E77F7200FC265A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69AAF1DF24E77F7200FC265A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		69AAF1E624E959B100FC265A /* HelloPodKIT.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HelloPodKIT.podspec; sourceTree = "<group>"; };
+		69AAF1E924E95B7600FC265A /* HelloModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloModel.h; sourceTree = "<group>"; };
+		69AAF1EA24E95B7600FC265A /* HelloModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +47,8 @@
 		69AAF1C124E77F6500FC265A = {
 			isa = PBXGroup;
 			children = (
+				69AAF1E624E959B100FC265A /* HelloPodKIT.podspec */,
+				69AAF1E824E95B4B00FC265A /* Classes */,
 				69AAF1CC24E77F6500FC265A /* helloPod */,
 				69AAF1CB24E77F6500FC265A /* Products */,
 			);
@@ -69,6 +76,15 @@
 				69AAF1DF24E77F7200FC265A /* main.m */,
 			);
 			path = helloPod;
+			sourceTree = "<group>";
+		};
+		69AAF1E824E95B4B00FC265A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				69AAF1E924E95B7600FC265A /* HelloModel.h */,
+				69AAF1EA24E95B7600FC265A /* HelloModel.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +146,7 @@
 			files = (
 				69AAF1DD24E77F7200FC265A /* LaunchScreen.storyboard in Resources */,
 				69AAF1DA24E77F7200FC265A /* Assets.xcassets in Resources */,
+				69AAF1E724E959B200FC265A /* HelloPodKIT.podspec in Resources */,
 				69AAF1D824E77F6500FC265A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69AAF1EB24E95B7600FC265A /* HelloModel.m in Sources */,
 				69AAF1D524E77F6500FC265A /* ViewController.m in Sources */,
 				69AAF1CF24E77F6500FC265A /* AppDelegate.m in Sources */,
 				69AAF1E024E77F7200FC265A /* main.m in Sources */,
@@ -286,6 +304,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ND3ABLQFQ7;
 				INFOPLIST_FILE = helloPod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +322,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ND3ABLQFQ7;
 				INFOPLIST_FILE = helloPod/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
